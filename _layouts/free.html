@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" class="{% if page.route %}route-{{page.route}}{% elsif page.layout %}route-{{page.layout}}{% endif %}" style="height:100%">
+  {% include head.html %}
+  <body class="notification is-primary" style="min-height: 100%" class="layout-{{ page.layout }}{% if page.doc-tab %} page-{{ page.doc-tab}}{% endif %}">
+		{{ content }}
+  </body>
+	
+	<script src="{{ site.url }}/js/jquery-3.2.1.min.js"></script>
+	<script src="{{ site.url }}/js/bulma.js"></script>
+	<script src="{{ site.url }}/js/clipboard.min.js"></script>
+	<script src="{{ site.url }}/js/custom.js"></script>
+
+</html>

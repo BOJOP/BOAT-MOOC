@@ -3,3 +3,16 @@
 @charset "utf-8";
 
 @import "bulma";
+
+
+.border-right {
+	border-right: #e7e7e7 solid 1px;
+}
+
+aside {
+	padding: 20px;
+}
+
+nav {
+	border-bottom: #e7e7e7 solid 1px;
+}
