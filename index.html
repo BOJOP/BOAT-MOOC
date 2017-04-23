@@ -3,33 +3,63 @@ layout: free
 route: index
 ---
 
-<div class="columns">
-	<div class="column is-4 is-offset-4"> 
-		<form id="form">
-			<div class="tile" style="padding-top: 32vh;">
-				<div class="tile is-child box notification" >
-					<p class="title" style="color: black;">Login</p>
-					<div class="field has-addons has-addons-centered">
-						<p class="control is-expanded has-icon">
-							<input type="text" class="input" id="username" placeholder="username">
-							<span class="icon is-small is-left">
-								<i class="fa fa-user"></i>
-							</span>
-						</p>
+<div class="login-wrapper columns">
+	<div class="column is-8 is-hidden-mobile hero-banner">
+		<section class="hero is-fullheight is-dark">
+			<div class="hero-body">
+				<div class="container section">
+					<div class="has-text-right">
+						<h1 class="title is-1">Login</h1> <br>
+						<p class="title is-3">Welcome to Boat's MOOC</p>
 					</div>
-					<div class="field has-addons has-addons-centered">
-						<p class="control is-expanded has-icon">
-							<input type="password" class="input" id="password" placeholder="password">
-							<span class="icon is-small is-left">
-								<i class="fa fa-key"></i>
-							</span>
-						</p>
-					</div>
-					<p class="is-pulled-right">
-						<a href="/home" id="login" class="button is-primary">Login</a>
-					</p>
 				</div>
-			</div>	
-		</form>
+			</div>
+			<div class="hero-footer">
+				<p class="has-text-centered">Image © Glenn Carstens-Peters via unsplash</p>
+			</div>
+		</section>  
+	</div>
+	<div class="column is-4">
+		<section class="hero is-fullheight">
+			<div class="hero-heading">
+				<div class="section has-text-centered">
+					<img src="{{ site.url }}/images/logo.png" alt="Bulma logo" width="150px">
+				</div>
+			</div>
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns">
+						<div class="column is-8 is-offset-2">
+							<h1 class="avatar has-text-centered section">
+								<img src="{{ site.url }}/images/profile.jpg">
+							</h1>
+							<div class="login-form">
+								<p class="control has-icon has-icon-right">
+									<input class="input email-input" type="text" placeholder="username">
+									<span class="icon user">
+										<i class="fa fa-user"></i>
+									</span>
+								</p>
+								<p class="control has-icon has-icon-right">
+									<input class="input password-input" type="password" placeholder="password">
+									<span class="icon user">
+										<i class="fa fa-lock"></i>
+									</span>
+								</p>
+								<p class="control login">
+									<a href="/courses" class="button is-primary is-outlined is-large is-fullwidth">Login</a>
+								</p>
+							</div>
+							<div class="section forgot-password">
+								<p class="has-text-centered">
+									<a href="/resetpassword">Forgot password</a>
+									<a href="/register">Register</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>  
 	</div>
 </div>

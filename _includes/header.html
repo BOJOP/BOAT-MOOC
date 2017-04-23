@@ -4,9 +4,9 @@
       <a class="nav-item">
         <img src="{{ site.url }}/images/logo.png" style="min-height: 50px;" alt="Bulma logo">
       </a>
-      <a href="/home" 	 class="nav-item is-tab is-hidden-mobile is-active">หน้าหลัก</a>
-      <a href="/courses" class="nav-item is-tab is-hidden-mobile">เลือกคอร์สเรียน</a>
-      <a href="/help" 	 class="nav-item is-tab is-hidden-mobile">ช่วยเหลือ</a>
+      <a href="/home" 	 class="nav-item is-tab is-hidden-mobile  {% if page.route == 'home' %}is-active{% endif %}">หน้าหลัก</a>
+      <a href="/courses" class="nav-item is-tab is-hidden-mobile  {% if page.route == 'courses' %}is-active{% endif %}">เลือกคอร์สเรียน</a>
+      <a href="/help" 	 class="nav-item is-tab is-hidden-mobile  {% if page.route == 'help' %}is-active{% endif %}">ช่วยเหลือ</a>
     </div>
     <span id="nav-toggle" class="nav-toggle">
       <span></span>
@@ -14,16 +14,16 @@
       <span></span>
     </span>
     <div id="nav-menu" class="nav-right nav-menu">
-      <a href="/home" 	  class="nav-item is-tab is-hidden-tablet is-active">หน้าหลัก</a>
-      <a href="/courses"  class="nav-item is-tab is-hidden-tablet">เลือกคอร์สเรียน</a>
-      <a href="/teacher"  class="nav-item is-tab is-hidden-tablet">ช่วยเหลือ</a>
-      <a href="/profile" class="nav-item is-tab">
+      <a href="/home" 	  class="nav-item is-tab is-hidden-tablet {% if page.route == 'home' %}is-active{% endif %}">หน้าหลัก</a>
+      <a href="/courses"  class="nav-item is-tab is-hidden-tablet {% if page.route == 'courses' %}is-active{% endif %}">เลือกคอร์สเรียน</a>
+      <a href="/teacher"  class="nav-item is-tab is-hidden-tablet {% if page.route == 'help' %}is-active{% endif %}">ช่วยเหลือ</a>
+      <a href="/profile" class="nav-item is-tab {% if page.route == 'profile' %}is-active{% endif %}">
         <figure class="image is-32x32" style="margin-right: 8px;">
           <img src="{{ site.url }}/images/profile.jpg">
         </figure>
 				โปรไฟล์
       </a>
-      <a href="/login" class="nav-item is-tab">ล็อกเอาท์</a>
+      <a href="/" class="nav-item is-tab">ล็อกเอาท์</a>
     </div>
   </div>
 </nav>

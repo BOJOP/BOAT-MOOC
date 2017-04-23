@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="{% if page.route %}route-{{page.route}}{% elsif page.layout %}route-{{page.layout}}{% endif %}" style="height:100%">
   {% include head.html %}
-  <body class="notification is-primary" style="min-height: 100%" class="layout-{{ page.layout }}{% if page.doc-tab %} page-{{ page.doc-tab}}{% endif %}">
+  <link rel="stylesheet" href="{{ site.url }}/css/login.css">
+
+	<body class="notification is-primary" style="min-height: 100%" class="layout-{{ page.layout }}{% if page.doc-tab %} page-{{ page.doc-tab}}{% endif %}">
 		{{ content }}
   </body>
 	

@@ -13,8 +13,12 @@
 }
 .background_primary_color {
 	background-color: #fff3e0;
-	
 }
+
+.color {
+	color: $primary;
+}
+
 #category_topic {
 	background-color: $primary;
 	color: white;
@@ -30,3 +34,12 @@ aside {
 nav {
 	border-bottom: #e7e7e7 solid 1px;
 }
+
+.section {
+	padding: 1rem 1.5rem;
+}
+
+.hero-body {
+	padding: 1.5rem 1.5rem;
+}
+
