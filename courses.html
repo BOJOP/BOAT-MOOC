@@ -2,7 +2,9 @@
 layout: default
 route: courses
 ---
-<section class="hero" id="category_topic">
+<div class="columns">
+	<div class="column">
+		<section class="hero" id="category_topic">
 		  <div class="hero-body">
 		    <div class="container">
 		      <h1 class="title" id="category_topic">
@@ -11,9 +13,10 @@ route: courses
 		    </div>
 		  </div>
 		</section>
-		
+	</div>
+</div>
 <div class="columns">
-	<div class="column is-2">
+	<div class="column is-2 border-right">
 		{% include sidebar_courses.html %}
 	</div>
 	<div class="column is-10 " >
