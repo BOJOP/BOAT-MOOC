@@ -4,7 +4,7 @@
 
 @import "bulma";
 
-#nav_bar {
+.nav_bar {
 	background-color: #fff8e1;
 }
 
@@ -13,9 +13,11 @@
 }
 .background_primary_color {
 	background-color: #fff8e1;
+	
 }
 #category_topic {
-	background-color: #ffffff;
+	background-color: $primary;
+	color: white;
 }
 .border-right {
 	border-right: #e7e7e7 solid 1px;
