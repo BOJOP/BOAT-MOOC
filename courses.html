@@ -2,40 +2,44 @@
 layout: default
 route: courses
 ---
-<section class="hero is-primary" >
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-           &nbsp;ภาษาศาสตร์
-      </h1>
-    </div>
-  </div>
-</section>
-		
-<div class="columns" id="category_topic">
-	<div class="column is-2">
+<div class="columns">
+	<div class="column">
+		<section class="hero" id="category_topic">
+		  <div class="hero-body">
+		    <div class="container">
+		      <h1 class="title" id="category_topic">
+		           &nbsp;ภาษาศาสตร์ > ภาษาอังกฤษ
+		      </h1>
+		    </div>
+		  </div>
+		</section>
+	</div>
+</div>
+<div class="columns">
+	<div class="column is-2 border-right">
 		{% include sidebar_courses.html %}
 	</div>
-	<div class="column is-10" >
-
-
-		<br>		
+	<div class="column is-10 " >
+		
+	
 		<div class="columns is-multiline" id="column_list">
 			<div class="column is-3" id="card_dummy">
-				<div class="card">
-				    <div class="card-image">
-				    	<figure class="image is-600x800">
-				        <img src="images/courses/coursesDummy.png" alt="Image" width="600" height="800">
-				    	</figure>
-				    </div>
-				  	<div class="card-content">
-					    <div class="media">
-					      <div class="media-content">
-					        <p class="title is-4">John Smith</p>
-					        <p class="subtitle is-6">@johnsmith</p>
-					      </div>
+				<div class="section">
+					<div class="card">
+					    <div class="card-image" >
+					    	<figure class="image is-600x800">
+					        <img src="images/courses/coursesDummy.png" alt="Image" width="600" height="800">
+					    	</figure>
 					    </div>
-					</div>
+					  	<div class="card-content background_primary_color">
+						    <div class="media">
+						      <div class="media-content">
+						        <p class="subtitle is-7 background_primary_color">ภาษาอังกฤษเพื่อการสื่อสาร</p>
+						        <p class="title is-6 background_primary_color">350บาท</p>
+						      </div>
+						    </div>
+						</div>
+			    	</div>
 		    	</div>
 			</div>
 		</div>
