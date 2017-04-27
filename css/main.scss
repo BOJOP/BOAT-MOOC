@@ -43,3 +43,24 @@ nav {
 	padding: 1.5rem 1.5rem;
 }
 
+
+@font-face {
+    font-family: 'Supermarket';
+    font-weight: normal;
+    font-style:  normal;
+    src: url('../fonts/supermarket-webfont/supermarket-webfont.eot'); /* IE9 Compat Modes */
+    src: local('Supermarket'),
+         url('../fonts/supermarket-webfont/supermarket-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/supermarket-webfont/supermarket-webfont.woff') format('woff'), /* Modern browsers */
+         url('../fonts/supermarket-webfont/supermarket-webfont.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+html, body{
+	font-family: "Supermarket", tahoma,ms sans serif;
+}
+
+.nav-item a.is-tab, a.nav-item.is-tab,.menu-list a {
+	font-size: 18px;
+}
+
+
