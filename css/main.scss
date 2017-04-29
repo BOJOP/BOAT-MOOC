@@ -5,14 +5,14 @@
 @import "bulma";
 
 .nav_bar {
-	background-color: #fff3e0;
+	background-color: #ffffff;
 }
 
 .background_color {
 	background-color: #ffffff;
 }
 .background_primary_color {
-	background-color: #fff3e0;
+	background-color: #ff6d00;
 }
 
 .color {
@@ -37,6 +37,7 @@ nav {
 
 .section {
 	padding: 1rem 1.5rem;
+	background-color: #fafafa;
 }
 
 .hero-body {
@@ -58,6 +59,7 @@ nav {
 html, body{
 	font-family: "Supermarket", tahoma,ms sans serif;
 	font-size: 16px;
+	background-color: #fafafa;
 }
 
 .nav-item a.is-tab, a.nav-item.is-tab,.menu-list a {
@@ -79,4 +81,16 @@ html, body{
 
 .border {
 	border: 1px solid #e8e8e8;	
+}
+
+#div-main {
+	background-color: #fafafa;
+}
+
+.column.is-2.border-right {
+	background-color: white;
+}
+
+.hero {
+	background-color: #fafafa;
 }
