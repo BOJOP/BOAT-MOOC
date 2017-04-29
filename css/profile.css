@@ -1,6 +1,4 @@
-body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-}
+
 .container.profile {
   margin-top:50px;
 }
@@ -55,9 +53,6 @@ body {
 }
 .avatar img {
   border-radius: 200px;
-}
-p.title.is-bold {
-  font-weight: bold;
 }
 .card .timestamp {
   float:right;

@@ -12,7 +12,7 @@ route: profile
 			<div class="column">
 				<span class="title is-3">Course</span>
 				<span class="title is-3 has-text-muted">&nbsp;|&nbsp;</span>
-				<span class="title is-4 has-text-muted">ภาษาไทยเพื่อการสื่อสาร</span>
+				<span class="title is-4 has-text-muted">เสียงในภาษาไทย</span>
 			</div>
 		</div>
 		<hr>
@@ -23,10 +23,10 @@ route: profile
 		<div class="columns">
 			<div class="column is-6 is-offset-1">
 				<div class="title is-3">
-					ชื่อสินค้า: ภาษาไทยเพื่อการสื่อสาร
+					ชื่อสินค้า: เสียงในภาษาไทย
 					
 				</div>
-				<p class="title is-3 ">ราคา: 350฿</p>
+				<p class="title is-3 ">ราคา: 300฿</p>
 				<hr>
 				<p class="title is-4 "> เลือกช่องทางชำระสินค้า </p><br>
 					
@@ -54,9 +54,42 @@ route: profile
 				<br>
 
 				<div class="is-pulled-right">
-					<a href="/courses/thai/learn/video.html"class="button is-primary">&nbsp;&nbsp;&nbsp;&nbsp;ชำระเงิน&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					<a id="pay" class="button is-primary">&nbsp;&nbsp;&nbsp;&nbsp;ชำระเงิน&nbsp;&nbsp;&nbsp;&nbsp;</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">ยืนยันการชำระเงิน</p>
+      <button class="delete"></button>
+    </header>
+    <section class="modal-card-body">
+				คุณต้องการยืนยันการชำระเงินเพื่อซื้อวิชา เสียงในภาษาไทย ใช่หรือไม่
+    </section>
+    <footer class="modal-card-foot">
+      <a href="/courses/thai/learn/video.html" class="button is-success">ยืนยัน</a>
+      <a id="modal-close" class="button">ยกเลิก</a>
+    </footer>
+  </div>
+</div>
+
+
+<script>
+	$(function(){
+		$('#pay').click(function(){
+			$('html').addClass('is-clipped');
+      $('.modal').addClass('is-active');
+		});
+		
+		$('#modal-close').click(function() {
+			$('html').removeClass('is-clipped');
+			$('.modal').removeClass('is-active');
+		});
+	});
+</script>
