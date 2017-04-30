@@ -6,6 +6,7 @@
       </a>
       <a href="/home" 	 class="nav-item is-tab is-hidden-mobile  {% if page.route == 'home' %}is-active{% endif %}">หน้าหลัก</a>
       <a href="/courses" class="nav-item is-tab is-hidden-mobile  {% if page.route == 'courses' %}is-active{% endif %}">เลือกคอร์สเรียน</a>
+      <a href="/profile" class="nav-item is-tab is-hidden-mobile  {% if page.route == 'profile' %}is-active{% endif %}">คอร์สของฉัน</a>
       <a class="nav-item is-tab is-hidden-mobile  {% if page.route == 'help' %}is-active{% endif %}">ช่วยเหลือ</a>
     </div>
     <span id="nav-toggle" class="nav-toggle">
@@ -17,7 +18,7 @@
       <a href="/home" 	  class="nav-item is-tab is-hidden-tablet {% if page.route == 'home' %}is-active{% endif %}">หน้าหลัก</a>
       <a href="/courses"  class="nav-item is-tab is-hidden-tablet {% if page.route == 'courses' %}is-active{% endif %}">เลือกคอร์สเรียน</a>
       <a href="/teacher"  class="nav-item is-tab is-hidden-tablet {% if page.route == 'help' %}is-active{% endif %}">ช่วยเหลือ</a>
-      <a href="/profile" class="nav-item is-tab {% if page.route == 'profile' %}is-active{% endif %}">
+      <a href="/profile" class="nav-item is-tab">
         <figure class="image is-32x32" style="margin-right: 8px;">
           <img src="{{ site.url }}/images/profile.jpg">
         </figure>
