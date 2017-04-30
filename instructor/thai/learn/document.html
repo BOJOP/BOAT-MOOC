@@ -6,17 +6,24 @@ sub: document
 ---
 
 <div class="columns background_color">
-	<div class="column is-2 border-right">
-		{% include sidebar.html %}
+	<div class="column is-3 border-right">
+		{% include sidebar_courses_instructor.html %}
 	</div>
 	<div class="column">
 		<br>
 		<div class="columns">
-			<div class="column is-10 is-offset-1">
+			<div class="column is-9 is-offset-1">
 				<div class="title">
 					บทความเรื่อง เสียงพยัญชนะ
 				</div>
 				<hr>
+			</div>
+			<div class="column is-2">
+			    <div class="field">
+			      <p class="control">
+			        <button align="bottom" class="button is-primary">ลบบทเรียน</button>
+			      </p>
+			    </div>
 			</div>
 		</div>
 		<section class="hero">
@@ -35,6 +42,15 @@ sub: document
 							<p class="has-text-centered">ฃ  ฅ  ฉ  ผ  ฝ  ฌ  ห  อ  ฮ</p><br>
 					</p>
 			</div>
+			<div class="columns">
+				<div align="right" class="column is-2 is-offset-8">
+					<button class="button is-primary">แก้ไขบทความ</button>
+				</div>
+				<div align="left" class="column is-2 ">
+					<button class="button is-primary">อัพโหลดไฟล์</button>
+				</div>
+			</div>
+			<br>
 		</section>
 		<br>
 		<div class="columns">

@@ -6,125 +6,153 @@ sub: exercise
 ---
 
 <div class="columns background_color">
-	<div class="column is-2 border-right">
-		{% include sidebar.html %}
+	<div class="column is-3 border-right">
+		{% include sidebar_courses_instructor.html %}
 	</div>
 	<div class="column">
 		<br>
 		<div class="columns">
-			<div class="column is-10 is-offset-1">
+			<div class="column is-9 is-offset-1">
 				<div class="title">
 					แบบฝึกหัดเรื่อง เสียงพยัญชนะ
 				</div>
 				<hr>
+			</div>
+			<div class="column is-2">
+			    <div class="field">
+			      <p class="control">
+			        <button align="bottom" class="button is-primary">ลบบทเรียน</button>
+			      </p>
+			    </div>
 			</div>
 		</div>
 		<section class="hero">
 			<div class="hero-body">
 
 					<p class="title is-5">
-						1. ข้อใดกล่าวถูกต้องเกี่ยวกับเสียงพยัญชนะ<br>
+						1. ข้อใดกล่าวถูกต้องเกี่ยวกับเสียงพยัญชนะ
+						<br>
 						<form>
-						  <input type="radio" name="gender" value="male">&nbsp;  ลมที่ผ่านออกมาแล้วมีระดับเสียงสูง ๆ ต่ำ ๆ<br>
-						  <input type="radio" name="gender" value="female">&nbsp;  ลมถูกสกัดกั้นที่ลำคอทั้งหมดแล้วจึงผ่านออกมาภายนอก<br>
-						  <input type="radio" name="gender" value="other">&nbsp; ลมผ่านออกมาได้โดยสะดวกไม่มีการสกัดกั้น ณ ที่ใดที่หนึ่ง<br>
-						  <input type="radio" name="gender" value="other">&nbsp; ลมถูกสกัดกั้น ณ ที่ใดที่หนึ่งเป็นบางส่วนหรือทั้งหมดแล้วจึงผ่านออกมาภายนอก
+						  <input type="checkbox" name="gender" value="male">&nbsp;  ลมที่ผ่านออกมาแล้วมีระดับเสียงสูง ๆ ต่ำ ๆ<br>
+						  <input type="checkbox" name="gender" value="female" checked="checked">&nbsp;  ลมถูกสกัดกั้นที่ลำคอทั้งหมดแล้วจึงผ่านออกมาภายนอก<br>
+						  <input type="checkbox" name="gender" value="other">&nbsp; ลมผ่านออกมาได้โดยสะดวกไม่มีการสกัดกั้น ณ ที่ใดที่หนึ่ง<br>
+						  <input type="checkbox" name="gender" value="other">&nbsp; ลมถูกสกัดกั้น ณ ที่ใดที่หนึ่งเป็นบางส่วนหรือทั้งหมดแล้วจึงผ่านออกมาภายนอก
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 
 					<p class="title is-5">
 						2. เสียงพยัญชนะจะปรากฏในส่วนใดของพยางค์ <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; ต้นพยางค์ <br>
-						<input type="radio" name="gender" value="male">&nbsp; กลางพยางค์ <br>
-						<input type="radio" name="gender" value="male">&nbsp; ท้ายพยางค์ <br>
-						<input type="radio" name="gender" value="male">&nbsp; ส่วนใดของพยางค์ก็ได้ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ต้นพยางค์ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; กลางพยางค์ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ท้ายพยางค์ <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; ส่วนใดของพยางค์ก็ได้ <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						3. พยัญชนะไทยมีกี่รูป  กี่เสียง <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; 21  รูป   32  เสียง <br>
-						<input type="radio" name="gender" value="male">&nbsp; 32  รูป   32  เสียง <br>
-						<input type="radio" name="gender" value="male">&nbsp; 44  รูป   21  เสียง <br>
-						<input type="radio" name="gender" value="male">&nbsp; 44  รูป   32  เสียง <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; 21  รูป   32  เสียง <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; 32  รูป   32  เสียง <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; 44  รูป   21  เสียง <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; 44  รูป   32  เสียง <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						4. ข้อใดออกเสียงพยัญชนะต้นไม่เหมือนกันทั้งหมด <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; ข   ฃ   ค   ฅ   ฆ  ง <br>
-						<input type="radio" name="gender" value="male">&nbsp; ซ   ศ   ษ   ส <br>
-						<input type="radio" name="gender" value="male">&nbsp; ฐ   ถ   ฑ   ฒ   ท   ธ <br>
-						<input type="radio" name="gender" value="male">&nbsp; ฎ  ด <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ข   ฃ   ค   ฅ   ฆ  ง <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ซ   ศ   ษ   ส <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; ฐ   ถ   ฑ   ฒ   ท   ธ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ฎ  ด <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						5.  ฐ  มีเสียงใกล้เคียงพยัญชนะในข้อใดมากที่สุด <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; ค   ฅ   ฆ <br>
-						<input type="radio" name="gender" value="male">&nbsp; ฑ   ฒ   ท <br>
-						<input type="radio" name="gender" value="male">&nbsp; ฉ   ช   ฌ <br>
-						<input type="radio" name="gender" value="male">&nbsp; ผ   พ   ภ <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; ค   ฅ   ฆ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ฑ   ฒ   ท <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ฉ   ช   ฌ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ผ   พ   ภ <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						6. ข้อใดออกเสียงพยัญชนะต้นควบกันทุกคำ <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; โจร   จริง   แคล้ว  <br>
-						<input type="radio" name="gender" value="male">&nbsp; สยอง   หมาย   ตลาด  <br>
-						<input type="radio" name="gender" value="male">&nbsp; ทรง  ทราบ   ทราม <br>
-						<input type="radio" name="gender" value="male">&nbsp; ใคร   กวาด  ขวา <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; โจร   จริง   แคล้ว  <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; สยอง   หมาย   ตลาด  <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ทรง  ทราบ   ทราม <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ใคร   กวาด  ขวา <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						7. พยัญชนะควบคือความหมายในข้อใด <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงตามกันมา <br>
-						<input type="radio" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงใกล้เคียงกัน  <br>
-						<input type="radio" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงเหมือนกัน <br>
-						<input type="radio" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงพร้อมกัน <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงตามกันมา <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงใกล้เคียงกัน  <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; พยัญชนะต้นสองตัวออกเสียงเหมือนกัน <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; พยัญชนะต้นสองตัวออกเสียงพร้อมกัน <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						8. ข้อใดเป็นพยัญชนะควบไม่แท้ <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; ขวิด   กรุง  ไกร <br>
-						<input type="radio" name="gender" value="male">&nbsp; จริง   สร้าง   ทรุด <br>
-						<input type="radio" name="gender" value="male">&nbsp; กลอง   ครวญ   ขลับ  <br>
-						<input type="radio" name="gender" value="male">&nbsp; ขวัญ   กราบ   พลอง <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; ขวิด   กรุง  ไกร <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; จริง   สร้าง   ทรุด <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; กลอง   ครวญ   ขลับ  <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ขวัญ   กราบ   พลอง <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						9. เสียงพยัญชนะควบเสียงใดได้มาจากต่างประเทศ <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; กว <br>
-						<input type="radio" name="gender" value="male">&nbsp; ดร <br>
-						<input type="radio" name="gender" value="male">&nbsp; ขว <br>
-						<input type="radio" name="gender" value="male">&nbsp; ถูกต้องทุกข้อ <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; กว <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ดร <br>
+						<input type="checkbox" name="gender" value="male" checked="checked">&nbsp; ขว checked="checked"<br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ถูกต้องทุกข้อ <br>
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<p class="title is-5">
 						10. ข้อใดมีเสียงพยัญชนะต้นเสียงเดียวกันมากที่สุด <br>
 						<form>
-						<input type="radio" name="gender" value="male">&nbsp; ขอฃวดให้คนนั้น <br>
-						<input type="radio" name="gender" value="male">&nbsp; ใครจะมาบ้านป่า <br>
-						<input type="radio" name="gender" value="male">&nbsp; รถยนต์ชนเกาะเก่า  <br>
-						<input type="radio" name="gender" value="male">&nbsp; ทำการบ้านนะน้อง
+						<input type="checkbox" name="gender" value="male" checked="checked" >&nbsp; ขอฃวดให้คนนั้น <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ใครจะมาบ้านป่า <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; รถยนต์ชนเกาะเก่า  <br>
+						<input type="checkbox" name="gender" value="male">&nbsp; ทำการบ้านนะน้อง
 						</form>
 					</p>
 					<br>
+					<a align="right" class="button is-primary is-outlined"> แก้ไขคำถาม </a>
+					<br><br>
 					<a class="button is-primary">
-					  Submit
+					  เพิ่มคำถาม
 					</a>
 			</div>
 		</section>
