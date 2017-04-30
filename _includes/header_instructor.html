@@ -1,0 +1,29 @@
+<nav class="nav has-shadow nav_bar">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item">
+        <img src="{{ site.url }}/images/logo.png" style="min-height: 50px;" alt="Bulma logo">
+      </a>
+      <a href="/home_instructor" 	 class="nav-item is-tab is-hidden-mobile  {% if page.route == 'home' %}is-active{% endif %}">หน้าหลัก</a>
+      <a href="/instructor/profile" class="nav-item is-tab is-hidden-mobile  {% if page.route == 'profile' %}is-active{% endif %}">คอร์สของฉัน</a>
+      <a class="nav-item is-tab is-hidden-mobile  {% if page.route == 'help' %}is-active{% endif %}">ช่วยเหลือ</a>
+    </div>
+    <span id="nav-toggle" class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <div id="nav-menu" class="nav-right nav-menu">
+      <a href="/home_instructor" 	  class="nav-item is-tab is-hidden-tablet {% if page.route == 'home' %}is-active{% endif %}">หน้าหลัก</a>
+			<a href="/instructor/profile" class="nav-item is-tab is-hidden-tablet  {% if page.route == 'profile' %}is-active{% endif %}">คอร์สของฉัน</a>
+      <a class="nav-item is-tab is-hidden-tablet {% if page.route == 'help' %}is-active{% endif %}">ช่วยเหลือ</a>
+      <a class="nav-item is-tab">
+        <figure class="image is-32x32" style="margin-right: 8px;">
+          <img src="{{ site.url }}/images/courses/teacher-6.jpg">
+        </figure>
+				โปรไฟล์
+      </a>
+      <a href="/" class="nav-item is-tab">ล็อกเอาท์</a>
+    </div>
+  </div>
+</nav>
