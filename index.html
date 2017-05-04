@@ -35,7 +35,7 @@ route: index
 							</h1>
 							<div class="login-form">
 								<p class="control has-icon has-icon-right">
-									<input class="input email-input" type="text" placeholder="ชื่อ">
+									<input id="username" class="input email-input" type="text" placeholder="ชื่อ">
 									<span class="icon user">
 										<i class="fa fa-user"></i>
 									</span>
@@ -47,12 +47,19 @@ route: index
 									</span>
 								</p>
 								<p class="control login">
-									<a href="/courses" class="button is-primary is-outlined is-large is-fullwidth">เข้าสู่ระบบ (ผู้เรียน)</a>
-								</p>
-								<p class="control login">
-									<a href="/instructor/profile.html" class="button is-primary is-outlined is-large is-fullwidth">เข้าสู่ระบบ (ผู้สอน)</a>
+									<a id="button-login" class="button is-primary is-outlined is-large is-fullwidth">เข้าสู่ระบบ</a>
 								</p>
 							</div>
+							<script>
+								$(function(){
+									$('#button-login').click(function(){
+										if($('#username')[0].value == "student")
+											window.location = '/home';
+										else
+											window.location = '/home_instructor';
+									})
+								})
+							</script>
 							<div class="section forgot-password">
 								<p class="has-text-centered">
 									<a href="/resetpassword">ลืมรหัสผ่าน</a>
